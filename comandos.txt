@@ -1,0 +1,85 @@
+Junior@DELL-G15 MINGW64 ~/Documents/DIGITAL HOUSE/Introducción a la informática - C5/Actividades/20230605-JuniorLopez (main)
+$ git init
+Initialized empty Git repository in C:/Users/Junior/Documents/DIGITAL HOUSE/Introducción a la informática - C5/Actividades/20230605-JuniorLopez/.git/
+
+Junior@DELL-G15 MINGW64 ~/Documents/DIGITAL HOUSE/Introducción a la informática - C5/Actividades/20230605-JuniorLopez (main)
+$ git remote add origin https://github.com/NoctisJr/20230605-JuniorLopez.git
+
+Junior@DELL-G15 MINGW64 ~/Documents/DIGITAL HOUSE/Introducción a la informática - C5/Actividades/20230605-JuniorLopez (main)
+$ touch comandos.txt main.js index.html
+
+Junior@DELL-G15 MINGW64 ~/Documents/DIGITAL HOUSE/Introducción a la informática - C5/Actividades/20230605-JuniorLopez (main)
+$ git add .
+
+Junior@DELL-G15 MINGW64 ~/Documents/DIGITAL HOUSE/Introducción a la informática - C5/Actividades/20230605-JuniorLopez (main)
+$ git commit -m "commit 01 de JuniorLopez"
+[main (root-commit) af5c86d] commit 01 de JuniorLopez
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 comandos.txt
+ create mode 100644 index.html
+ create mode 100644 main.js
+
+Junior@DELL-G15 MINGW64 ~/Documents/DIGITAL HOUSE/Introducción a la informática - C5/Actividades/20230605-JuniorLopez (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 249 bytes | 249.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/NoctisJr/20230605-JuniorLopez.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+Junior@DELL-G15 MINGW64 ~/Documents/DIGITAL HOUSE/Introducción a la informática - C5/Actividades/20230605-JuniorLopez (main)
+$ git checkout -b feature
+Switched to a new branch 'feature'
+
+Junior@DELL-G15 MINGW64 ~/Documents/DIGITAL HOUSE/Introducción a la informática - C5/Actividades/20230605-JuniorLopez (feature)
+$ mkdir Hardware Software SeguridadInformatica
+
+Junior@DELL-G15 MINGW64 ~/Documents/DIGITAL HOUSE/Introducción a la informática - C5/Actividades/20230605-JuniorLopez (feature)
+$ touch "Hardware/resumen.txt"
+
+Junior@DELL-G15 MINGW64 ~/Documents/DIGITAL HOUSE/Introducción a la informática - C5/Actividades/20230605-JuniorLopez (feature)
+$ touch "Software/resumen.txt"
+
+Junior@DELL-G15 MINGW64 ~/Documents/DIGITAL HOUSE/Introducción a la informática - C5/Actividades/20230605-JuniorLopez (feature)
+$ touch "SeguridadInformatica/resumen.txt"1~
+
+Junior@DELL-G15 MINGW64 ~/Documents/DIGITAL HOUSE/Introducción a la informática - C5/Actividades/20230605-JuniorLopez (feature)
+$ git add .
+
+Junior@DELL-G15 MINGW64 ~/Documents/DIGITAL HOUSE/Introducción a la informática - C5/Actividades/20230605-JuniorLopez (feature)
+$ git commit -m "commit 02 de JuniorLopez"
+[feature 66e5ca1] commit 02 de JuniorLopez
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Hardware/resumen.txt
+ create mode 100644 SeguridadInformatica/resumen.txt1~
+ create mode 100644 Software/resumen.txt
+
+Junior@DELL-G15 MINGW64 ~/Documents/DIGITAL HOUSE/Introducción a la informática - C5/Actividades/20230605-JuniorLopez (feature)
+$ git push origin feature
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 458 bytes | 458.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'feature' on GitHub by visiting:
+remote:      https://github.com/NoctisJr/20230605-JuniorLopez/pull/new/feature
+remote:
+To https://github.com/NoctisJr/20230605-JuniorLopez.git
+ * [new branch]      feature -> feature
+
+Junior@DELL-G15 MINGW64 ~/Documents/DIGITAL HOUSE/Introducción a la informática - C5/Actividades/20230605-JuniorLopez (feature)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Junior@DELL-G15 MINGW64 ~/Documents/DIGITAL HOUSE/Introducción a la informática - C5/Actividades/20230605-230605-JuniorLopez (main)
+$ git mv ./main.js ./resumenHardware.txt
+
+Junior@DELL-G15 MINGW64 ~/Documents/DIGITAL HOUSE/Introducción a la informática - C5/Actividades/20230605-230605-JuniorLopez (main)
+$ git mv ./index.html ./resumenSoftware.txt
